@@ -1,0 +1,91 @@
+body {
+    height: 70vh;
+}
+h1 {
+    color: rgb(49, 12, 185);
+    text-align: center;
+    height: 10vh;
+}
+
+#dot-container {
+    display: grid;
+    grid-template-areas: "a b c d";
+    justify-content: center;
+    margin: auto;
+}
+.dots {
+    border: 2px solid rgb(78, 45, 197);
+    background-color: #FFFFFF;
+    height: 5vh;
+    border-radius:50%;
+    width: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+
+#instructions {
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 4vh;
+}
+#pinTest {
+    text-align: center;    
+}
+#butt-container {
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+        "j k l";
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+}
+button {
+    font-size: 5vh;
+    background-color: rgb(215, 215, 248);
+    border: .1vw solid rgb(81, 45, 240);
+    height: 13vh;
+    width: 30vw;
+    margin: .5vw;
+    border-radius: 1vw;
+}
+button:active {
+    text-shadow: -1px -1px 0px #777, -1px -1px 0px #777;
+    box-shadow: inset 1px 1px 4px #222;
+    transform: translateY(1px);
+}
+#one {
+    grid-area: a;
+}
+#two {
+    grid-area: b;
+}
+#three {
+    grid-area: c;
+}
+#four {
+    grid-area: d;
+}
+#five {
+    grid-area: e;
+}
+#six {
+    grid-area: f;
+}
+#seven {
+    grid-area: g;
+}
+#eight {
+    grid-area: h;
+}
+#nine {
+    grid-area: i;
+}
+#zero {
+    grid-area: k;
+}
+#delete {
+    grid-area: l;
+}

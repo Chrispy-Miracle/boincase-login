@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boincase Login</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="boincase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    
+    <h1 >boincase</h1>
+    <div id="dot-container">
+        <div class="dots" id="dotOne"></div>
+        <span class="dots" id="dotTwo"></span>
+        <span class="dots" id="dotThree"></span>
+        <span class="dots" id="dotFour"></span>
+    </div>
+    <h2 id="instructions">Unlock with your PIN</h2>
+    <p id="pinTest"></p>
+    <div id="butt-container">
+        <button id="one"  onclick="handleClick(1)">1</button>
+        <button id="two" onclick="handleClick(2)">2</button>
+        <button id="three" onclick="handleClick(3)">3</button>
+        <button id="four" onclick="handleClick(4)">4</button>
+        <button id="five" onclick="handleClick(5)">5</button>
+        <button id="six" onclick="handleClick(6)">6</button>
+        <button id="seven" onclick="handleClick(7)">7</button>
+        <button id="eight" onclick="handleClick(8)">8</button>
+        <button id="nine" onclick="handleClick(9)">9</button>
+        <button id="clear" onclick="allClear()">Clear</button>
+        <button id="zero" onclick="handleClick(0)">0</button>
+        <button id="delete" onclick="backspace()">Del</button>
+    </div>
+    
+
+    <!-- <script>
+        let pincode = "4444";
+        let pinEntry = [];
+        let numberOfEntries: 0;
+        const handleClick = () => {
+            document.getElementByClass(".dots").style.color = "black";
+            // if (pinEntry.length > 4)
+            //   pinEntry.push(val);
+        }
+        $('button').on('click', function() {
+                $('body').css('background', '#ccc');
+            });
+        $(document).ready(function(){
+            $("button").click(function(){
+            $(".dots").addClass("active-dots");
+  });
+});
+    </script> -->
+</body>
+</html>
