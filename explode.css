@@ -1,0 +1,228 @@
+body{
+    background-color: black;
+}
+h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:rgb(85, 8, 8);
+    text-transform: uppercase;
+    margin-top: 30px;
+    animation: 3.5s head 1s;
+    transform-origin: top-left;
+}
+#piece-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30vh 45vw 40vh 45vw;
+    /* margin: 0px 50vw 45vh 50vw;
+    display:grid; */
+
+}
+@keyframes head {
+    0% {
+        color: rgb(85, 8, 8);
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    100%{
+        font-size: 25vh;
+        transform: translate(0px,100px) rotate(345deg);
+        color: rgb(240, 18, 18);
+    }
+}
+#explosion {
+    height: 50px;
+    width: 50px;
+    
+    border-radius: 50%;
+    animation: 1s explode ease-in;
+}
+.pieces {
+    /* flex-basis: 24%; */
+    /* background-color: orange; */
+    height: 13px;
+    width: 8px;
+    border-radius: 5px;
+    /* transform: skew(70deg); */
+    display: block;
+}
+@keyframes explode {
+    0% {    
+        background-color: orangered;
+        transform: scale(1);
+        
+    }
+    5% {
+        background-color: red;
+        transform: scale(1.5);
+    }
+    33% {
+        background-color: orange;
+        transform:scale(.25)
+    }
+    99% {
+        transform: scale(3.0);
+    }
+    100% {
+        background-color: orangered;
+    }
+}
+#p1 {
+    animation: 4s p1 1s ease-out;
+}
+#p2 {
+    animation: 1s p2 1s ease-out;
+}
+#p3 {
+    animation: .5s p3 1s ease-out;
+}
+#p4 {
+    animation: 1.5s p4 1s ease-out;
+}
+#p5 {
+    animation: .75s p5 1s ease-out;
+}
+#p6 {
+    animation: 2.5s p6 1s ease-out;
+}
+#p7 {
+    animation: .25s p7 1s ease-out;
+}
+#p8 {
+    animation: .5s p8 1s ease-out;
+}
+#p9 {
+    animation: 3s p9 1s ease-in;
+}
+#p10 {
+    animation: 2s p10 1s ease-in;
+}
+#p11 {
+    animation: 3s p11 1s ease-in;
+}
+#p12 {
+    animation: 1.5s p12 1s ease-in;
+}
+
+
+@keyframes p1 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(0deg);
+        background-color: red;        
+    }
+    100% {
+        transform: scale(.75) translate(500px, 500px) rotate(360deg) skewX(45deg);
+        background-color: orange;
+    }
+}
+@keyframes p2 {
+    0% {
+        transform:scale(2)  translate(0px, 0px) rotate(0deg) skewX(0deg);
+        background-color: red;        
+    }
+    100% {
+        transform: scale(.75) translate(-500px, 500px) rotate(360deg) skewX(45deg);
+        background-color: orange;
+    }
+}
+@keyframes p3 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(0deg);
+        background-color: red;
+    }
+    100% {
+        transform: scale(.75) translate(500px, -500px) rotate(360deg) skewX(50deg);
+        background-color: orange;
+    }
+}
+@keyframes p4 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(00deg);
+        background-color: red;
+    }
+    100% {
+        transform: scale(.75) translate(-500px, -500px) rotate(360deg) skewX(50deg);
+        background-color: orange;
+    }
+}
+@keyframes p5 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(50deg);
+        background-color: orangered;
+    }
+    100% {
+        transform: scale(.75) translate(0px, 500px) rotate(360deg) skewX(0deg);
+        background-color: red;
+    }
+}
+@keyframes p6 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(50deg);
+        background-color: orangered;   
+    }
+    100% {
+        transform: scale(.75) translate(-500px, 0px) rotate(360deg) skewX(0deg);
+        background-color: red;
+    }
+}
+@keyframes p7 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(50deg);
+        background-color: orangered;    
+    }
+    100% {
+        transform: scale(.75) translate(0px, -500px) rotate(360deg) skewX(0deg);
+        background-color: red;
+    }
+}
+@keyframes p8 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg) skewX(50deg);
+        background-color: orangered;
+    }
+    100% {
+        transform: scale(.75) translate(500px, 0px) rotate(360deg) skewX(0deg);
+        background-color: red;
+    }
+}
+@keyframes p9 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: scale(.75) translate(-50, 750px) rotate(360deg);
+        background-color: purple;
+    }
+}
+@keyframes p10 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg);
+        background-color: red;
+    }
+    100% {
+        transform: scale(.75) translate(-750px, -50px) rotate(360deg);
+        background-color: orange;
+    }
+}
+@keyframes p11 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg);
+        background-color: yellow;
+    }
+    100% {
+        transform: scale(.75) translate(50px, -750px) rotate(360deg);
+        background-color: red;
+    }
+}
+@keyframes p12 {
+    0% {
+        transform:scale(2) translate(0px, 0px) rotate(0deg);
+        background-color: orange;
+    }
+    100% {
+        transform: scale(.75) translate(750px, 50px) rotate(360deg);
+        background-color: purple;
+    }
+}
